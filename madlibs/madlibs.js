@@ -1,5 +1,5 @@
-var div = document.getElementById("Madlib_Headline");
-div.innerHTML = "Brad's 1st Javascript MADLIBS!"
+var headline = document.getElementById("Madlib_Headline");
+headline.innerHTML = "Javascript MADLIBS!"
 
 var noun = document.getElementById('noun1');
 noun.value = "Enter a noun";
@@ -25,6 +25,10 @@ buttonInput.innerHTML="submit";
 
 buttonInput.onclick = function(){
 	madlib.innerHTML = "While out with " + noun.value +", <br>there was the most " + adjective.value + "<br>and inexplicable " + verb.value + ".<br>It reminded me of those " + noun2.value + "<br>that in the 80's were commonly seen at " + place.value +".";
-	buttonInput.innerHTML = "re-submit";
-	div.innerHTML = "DO it again?" 
+	
 }
+
+function clearText(thefield){
+if (thefield.defaultValue==thefield.value)
+thefield.value = ""
+} 

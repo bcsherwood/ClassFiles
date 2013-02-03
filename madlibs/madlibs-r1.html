@@ -4,22 +4,30 @@
   <meta charset="utf-8">
   <title>Madlibs-Homework Week One</title>
   <meta name="description" content="Madlibs-Homework Week One">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta name="author" content="Madlibs">
+  <link rel="stylesheet" type="text/css" href="madlibs.css"/>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-	<div id="Madlib_Headline" class="wrap">something</div>
-	<input type="text" name="noun1" value="" id="noun1">
-	<input type="text" name="adjective" value="" id="adjective">
-	<input type="text" name="verb" value="" id="verb">
-	<input type="text" name="place" value="" id="place">
-	<input type="text" name="noun2" value="" id="noun2">
-	<button id="submit">click</button>
-	<div>
-		<p  id="madlib">madlib will fill in here<p>
+	<div id="wrap">
+		<div class="headline">
+			<h1 id="Madlib_Headline" ></h1>
+		</div>
+		<div class="form-fields">
+			<input type="text" class="field" value="" id="noun1"  onclick="this.value='';">
+			<input type="text" class="field" value="" id="adjective" onclick="this.value='';">
+			<input type="text" class="field" value="" id="verb" onclick="this.value='';">
+			<input type="text" class="field" value="" id="place" onclick="this.value='';">
+			<input type="text" class="field" value="" id="noun2" onclick="this.value='';">
+		</div>
+		<div class="button">
+			<button id="submit"></button>
+		</div>
+		<div class="copy">
+			<p  id="madlib"><p>
+		</div>
 	</div>
 	<script src="madlibs.js"></script>
 </body>
