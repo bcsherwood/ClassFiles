@@ -27,8 +27,3 @@ buttonInput.onclick = function(){
 	madlib.innerHTML = "While out with " + noun.value +", <br>there was the most " + adjective.value + "<br>and inexplicable " + verb.value + ".<br>It reminded me of those " + noun2.value + "<br>that in the 80's were commonly seen at " + place.value +".";
 	
 }
-
-function clearText(thefield){
-if (thefield.defaultValue==thefield.value)
-thefield.value = ""
-} 
